@@ -147,9 +147,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+if os.getenv('GDAL_LIBRARY_PATH') and os.getenv('GEOS_LIBRARY_PATH'):
+    GDAL_LIBRARY_PATH = os.getenv('GDAL_LIBRARY_PATH')
+    GEOS_LIBRARY_PATH = os.getenv('GEOS_LIBRARY_PATH')
 
-GDAL_LIBRARY_PATH = 'C:\\Program Files\\QGIS 3.44.4\\bin\\gdal311.dll'
-GEOS_LIBRARY_PATH = 'C:\\Program Files\\QGIS 3.44.4\\bin\\geos_c.dll'
+
 # PROJ_LIB = 'C:\\Program Files\\QGIS 3.44.4\\share\\proj'
 
 
