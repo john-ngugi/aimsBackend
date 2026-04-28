@@ -224,16 +224,16 @@ class LandUseClass(models.Model):
     
 class CropType(models.Model):
     CROPTYPE_COLORS = {
-        'Coffee': '#7B3F00',
-        'Maize': '#FFD700',
-        'Beans': '#8B4513',
-        'Tea': '#228B22',
-        'Potato': '#DEB887',
-        'Vegetables': '#90EE90',
-        'Banana': '#FFE135',
-        'Fruits': '#FF6347',
-        'Cereals': '#F4A460',
-        'Legumes': '#9ACD32',
+  'Coffee': "#8b5cf6",
+  'Maize': "#fbbf24",
+  'Beans': "#dc1010", 
+  'Tea': "#22c55e", 
+  'Banana': "#cc16ae",
+  'Vegetables': "#10b981",
+  'Fruits': "#EF4444",
+  'Other': "#c913cf",
+  'Legumes': "#ec4899",
+  'Avocado': "#ef4444",
     }
 
     name = models.CharField(max_length=100, unique=True)
