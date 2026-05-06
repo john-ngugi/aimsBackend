@@ -163,4 +163,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://192.168.1.148",
     "http://192.168.1.148:8000",
     "https://aims.ksa.go.ke",
+    "https://api.aims.ksa.go.ke",
 ]
